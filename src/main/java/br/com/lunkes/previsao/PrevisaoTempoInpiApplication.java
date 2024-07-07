@@ -1,4 +1,4 @@
-package br.com.lunkes.previsao.tempo.inpi.previsao_tempo_inpi;
+package br.com.lunkes.previsao;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

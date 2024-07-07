@@ -1,4 +1,4 @@
-package br.com.lunkes.previsao.tempo.inpi.previsao_tempo_inpi;
+package br.com.lunkes.previsao;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
