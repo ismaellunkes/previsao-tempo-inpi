@@ -13,6 +13,9 @@ public class InpeService {
     @Value("${base.url.inpe}")
     private String baseUrlInpe;
 
+    @Value("${base.url.inpe.busca.codigo.cidade}")
+    private String buscaCodigoCidade;
+
     @Autowired
     public InpeService(RestTemplate restTemplate) {
         this.restTemplate = restTemplate;
@@ -20,5 +23,9 @@ public class InpeService {
 
     public String getInpeData() {
         return restTemplate.getForObject(baseUrlInpe, String.class);
+    }
+
+    public String getInpeCodigoCidade(String nomeCidade) {
+        return restTemplate.getForObject(baseUrlInpe + buscaCodigoCidade.concat(nomeCidade), String.class);
     }
 }
